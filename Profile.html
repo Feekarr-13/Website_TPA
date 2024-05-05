@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="website icon" type="png" href="image.png">
+    <title>TPA Masjid AL-Istiqomah</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile TPA Masjid AL-Istiqomah</title>
+    <link rel="stylesheet" href="Profile.css">
+</head>
+
+<body>
+    <div class="top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 top-left">
+                    <font style="vertical-align: inherit;">
+                        <font style 1="vertical-align: inherit;">Welcome to the TPA AL-Istiqomah Website</font>
+                    </font>
+                </div>
+                <div class="col-md-6 top-right">
+                    <div id="clock" style="text-align: right;">Rabu, 14 Juni 2023 03:26:06 PM</div>
+                    <script type="text/javascript">
+                        function showTime() {
+                            var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                            var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                            var date = new Date();
+                            var day = date.getDate();
+                            var month = date.getMonth();
+                            var thisDay = date.getDay(),
+                                thisDay = myDays[thisDay];
+                            var yy = date.getYear();
+                            var year = (yy < 1000) ? yy + 1900 : yy;
+
+                            var a_p = "";
+                            var today = new Date();
+                            var curr_hour = today.getHours();
+                            var curr_minute = today.getMinutes();
+                            var curr_second = today.getSeconds();
+                            if (curr_hour < 12) {
+                                a_p = "AM";
+                            } else {
+                                a_p = "PM";
+                            }
+                            if (curr_hour == 0) {
+                                curr_hour = 12;
+                            }
+                            if (curr_hour > 12) {
+                                curr_hour = curr_hour - 12;
+                            }
+                            curr_hour = checkTime(curr_hour);
+                            curr_minute = checkTime(curr_minute);
+                            curr_second = checkTime(curr_second);
+                            document.getElementById('clock').innerHTML = thisDay + ', ' + day + ' ' + months[month] + ' ' + year + ' ' + curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+                        }
+
+                        function checkTime(i) {
+                            if (i < 10) {
+                                i = "0" + i;
+                            }
+                            return i;
+                        }
+                        setInterval(showTime, 500);
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Profile TPA Masjid AL-Istiqomah</h1>
+        <nav>
+            <ul>
+                <li><a href="Beranda.html">Beranda</a></li>
+                <li><a href="Profile.html">Profil TPA</a></li>
+                <li><a href="index.html">Dakwah</a></li>
+                <li><a href="Program.html">Program TPA</a></li>
+                <li><a href="index.html">Fundraising</a></li>
+                <li><a href="Kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Slider Gambar</title>
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+            <style>
+                /* Tambahkan gaya CSS di sini (opsional) */
+                
+                body {
+                    font-family: 'Times New Roman', Times, serif, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f0f0f0;
+                }
+                
+                .swiper-container {
+                    width: 80%;
+                    max-width: 800px;
+                    margin: 20px auto;
+                }
+                
+                .swiper-slide img {
+                    width: 100%;
+                    height: auto;
+                }
+                /* Gaya untuk membuat teks rata tengah di bagian VISI dan MISI */
+                
+                #VISI,
+                #MISI {
+                    text-align: center;
+                    background-color: #f0f0f0;
+                    /* Warna latar belakang */
+                    padding: 20px;
+                    /* Ruang dalam kotak */
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="Profile.3.jpg" alt="Gambar 1"></div>
+                    <div class="swiper-slide"><img src="Image.1.jpg" alt="Gambar 1"></div>
+                    <div class="swiper-slide"><img src="Image.2.jpg" alt="Gambar 2"></div>
+                    <div class="swiper-slide"><img src="Image.3.jpg" alt="Gambar 3"></div>
+                    <div class="swiper-slide"><img src="Image.4.jpg" alt="Gambar 4"></div>
+                    <div class="swiper-slide"><img src="Image.5.jpg" alt="Gambar 5"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    loop: true,
+                    autoplay: {
+                        delay: 3000, // Interval 3 detik
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                });
+            </script>
+        </body>
+        <main>
+            <section id="VISI">
+                <h2>VISI</h2>
+                <p>Terwujudnya generasi Rabbani, Mencintai Al Qur'an dan Berakhlakul karimah.</p>
+            </section>
+
+            <section id="MISI">
+                <h2>MISI</h2>
+                <p>Mewujudkan generasi yang Rabbani</p>
+                <p>Memupuk kecintaan para santri terhadap Al-Qur’an.</p>
+                <p>Membentuk generasi yang berakhlakul karimah.</p>
+                <p>Menyelenggarakan Pendidikan dan pengajaran Islam yang sesuai dengan aqidah ahlussunnah wal jama’ah.</p>
+                <p>Menumbuhkan kecintaan santri dalam menjaga Negara Kesatuan Republik Indonesia.</p>
+            </section>
+
+            <section id="profile-info">
+                <h2>Informasi Pribadi</h2>
+                <p>Nama: TPA Masjid AL-Istiqomah</p>
+                <p>Alamat: Tempat Pendidikan Al Quran (TPA) yang terletak di wilayah Dk. Pekaleran Rt002 Rw002, Sridadi, Sirampog, Brebes, Jawa Tengah</p>
+                <p>Email : @tpamasjidalistiqomah002@gmail.com</p>
+                <p>No.Hp : 081212183307</p>
+            </section>
+
+            <section id="bio">
+                <h2>Alamat lengkapnya</h2>
+                <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1646625160965!2d109.08204587339488!3d-7.22205127091269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8fcf60dacda9%3A0xab0b127636faf25f!2sMasjid%20Al%20istiqomah!5e0!3m2!1sid!2sid!4v1688798627938!5m2!1sid!2sid"
+                        width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+            </section>
+        </main>
+    </main>
+
+    <footer>
+        <p>Email : @tpamasjidalistiqomah002@gmail.com</p>
+        <p>No.Hp : 081212183307</p>
+        <p>&copy; 2023 TPA Masjid AL-Istiqomah</p>
+    </footer>
+</body>
+
+</html>

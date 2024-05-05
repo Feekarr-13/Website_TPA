@@ -1,0 +1,46 @@
+/* General styling for widget blocks */
+
+.widget-block {
+    margin-bottom: 30px;
+}
+
+
+/* Styling for Contact Info */
+
+.widget.contact-widget {
+    background-color: gray;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.widget.contact-widget b {
+    color: #333;
+}
+
+
+/* Styling for Latest News */
+
+.widget.news-widget {
+    background-color: gray;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.single-latest-blog-post {
+    padding: 10px 0;
+    border-bottom: 1px dashed #dadada;
+}
+
+
+/* Styling for Banners */
+
+.widget.banner-widget {
+    background-color: gray;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.widget.banner-widget img {
+    width: 100%;
+    margin-bottom: 10px;
+}

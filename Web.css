@@ -1,0 +1,367 @@
+/* Apply this CSS to add colored background to the text */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Selain body, Anda juga dapat menentukan font untuk elemen lain, seperti h1 */
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+}
+
+
+/* Reset default margin dan padding untuk ul */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Reset some default styles */
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main navigation styles */
+
+.academy-main-menu {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    /* Menambahkan properti width untuk mengatur panjang lebar */
+}
+
+.classy-nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.classy-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.classy-menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.classy-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.classy-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cn-dropdown-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    white-space: nowrap;
+}
+
+
+/* Navbar Toggler styles */
+
+.navbarToggler {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    /* Menambahkan properti width untuk mengatur panjang lebar */
+}
+
+.navbarToggler span {
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* Responsive styles */
+
+#mobileMenu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .classy-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .classy-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #fff;
+        /* Set the background color of the responsive menu */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Add a shadow to the responsive menu */
+    }
+    .classy-menu.show {
+        display: flex;
+    }
+    .classy-menu a {
+        width: 100%;
+    }
+    .classy-menu .dropdown {
+        position: static;
+        width: auto;
+    }
+    .classy-menu .cn-dropdown-item:hover .dropdown {
+        display: none;
+    }
+}
+
+.horizontal-menu a {
+    color: #333;
+    /* Warna teks */
+    text-decoration: none;
+    /* Menghapus garis bawah pada tautan */
+    padding: 10px 15px;
+    /* Atur padding untuk tautan */
+    background-color: #f0f0f0;
+    /* Warna latar belakang kotak tautan */
+    border: 1px solid #0520ce;
+    /* Menambahkan garis tepi pada tautan */
+    border-radius: 5px;
+    /* Membuat sudut tautan lebih bulat */
+    transition: background-color 0.3s, color 0.3s;
+    /* Efek transisi latar belakang dan warna teks saat dihover */
+}
+
+.horizontal-menu a:hover {
+    background-color: #333;
+    /* Warna latar belakang saat dihover */
+    color: #fff;
+    /* Warna teks saat dihover */
+}
+
+
+/* Apply this CSS to add colored background to the text */
+
+h1 {
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+}
+
+.ad-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ad-item {
+    flex: 0 0 calc(50% - 10px);
+    /* Menggunakan 50% lebar dengan jarak 10px antara iklan */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* Tambahkan jarak bawah 10px */
+}
+
+
+/* Add this style for the ad container */
+
+.ad-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    /* Add some margin at the top for separation */
+}
+
+
+/* styles.css */
+
+.gallery-section {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.gallery-section {
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+
+/* Add this style for square images in the gallery */
+
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+    /* Make the images square */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+
+/* Add this style for the social icons container */
+
+.social-icons {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    /* Add some margin at the top for separation */
+}
+
+.social-icons a img {
+    width: 50px;
+    /* Adjust the width of social icons as needed */
+    height: 50px;
+    /* Adjust the height of social icons as needed */
+    margin-right: 10px;
+    /* Add some margin between social icons */
+}
+
+
+/* Add this style for the copyright section */
+
+.copyright {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* Add border to the copyright section */
+}
+
+
+/* Add this to your existing styles or in a new style block */
+
+.gallery-section {
+    margin-top: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+    /* Set the height to be the same as the width */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+    border-radius: 5px;
+}
+
+
+/* Add this to your existing styles or in a new style block */
+
+.gallery-section {
+    margin-top: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+    /* Set the height to be the same as the width */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+    border-radius: 5px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    /* Adjust the size of the social media icons */
+    height: 30px;
+    border-radius: 50%;
+    /* Make the icons circular */
+}
+
+.copyright {
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    /* Text color */
+    background-color: #3498db;
+    /* Background color */
+    border-radius: 5px;
+}
+
+.copyright {
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    /* Background color */
+    border-radius: 5px;
+}
+
+
+/* Example: Adjusting the width of the gallery container */
+
+.gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+}

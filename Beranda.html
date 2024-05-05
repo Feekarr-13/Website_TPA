@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="website icon" type="png" href="image.png">
+    <title>TPA Masjid AL-Istiqomah</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TPA Masid AL-Istiqomah</title>
+        <link rel="stylesheet" href="Beranda.css">
+    </head>
+
+    <body>
+        <div class="top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 top-left">
+                        <font style="vertical-align: inherit;">
+                            <font style 1="vertical-align: inherit;">Welcome to the TPA AL-Istiqomah Website</font>
+                        </font>
+                    </div>
+                    <div class="col-md-6 top-right">
+                        <div id="clock" style="text-align: right;">Rabu, 14 Juni 2023 03:26:06 PM</div>
+
+                        <script type="text/javascript">
+                            function showTime() {
+                                var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                                var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                                var date = new Date();
+                                var day = date.getDate();
+                                var month = date.getMonth();
+                                var thisDay = date.getDay(),
+                                    thisDay = myDays[thisDay];
+                                var yy = date.getYear();
+                                var year = (yy < 1000) ? yy + 1900 : yy;
+
+                                var a_p = "";
+                                var today = new Date();
+                                var curr_hour = today.getHours();
+                                var curr_minute = today.getMinutes();
+                                var curr_second = today.getSeconds();
+                                if (curr_hour < 12) {
+                                    a_p = "AM";
+                                } else {
+                                    a_p = "PM";
+                                }
+                                if (curr_hour == 0) {
+                                    curr_hour = 12;
+                                }
+                                if (curr_hour > 12) {
+                                    curr_hour = curr_hour - 12;
+                                }
+                                curr_hour = checkTime(curr_hour);
+                                curr_minute = checkTime(curr_minute);
+                                curr_second = checkTime(curr_second);
+                                document.getElementById('clock').innerHTML = thisDay + ', ' + day + ' ' + months[month] + ' ' + year + ' ' + curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+                            }
+
+                            function checkTime(i) {
+                                if (i < 10) {
+                                    i = "0" + i;
+                                }
+                                return i;
+                            }
+                            setInterval(showTime, 500);
+                        </script>
+                    </div>
+                </div>
+
+                <head>
+
+                    <head>
+                        <link rel="website icon" type="png" href="image.png">
+                        <title>TPA Masjid AL-Istiqomah</title>
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Halaman Isi</title>
+                        </head>
+
+                        <body>
+                            <header>
+                                <h1>Halaman Isi</h1>
+                                <nav>
+                                    <ul>
+                                        <li><a href="Beranda.html">Beranda</a></li>
+                                        <li><a href="Profile.html">Profil TPA</a></li>
+                                        <li><a href="index.html">Dakwah</a></li>
+                                        <li><a href="Program.html">Program TPA</a></li>
+                                        <li><a href="index.html">Fundraising</a></li>
+                                        <li><a href="Kontak.html">Kontak</a></li>
+                                    </ul>
+                                </nav>
+                            </header>
+
+                            <main>
+                                <h2>Artikel TPA Masjid AL-Istiqomah</h2>
+                                <article class="justify-text">
+                                    <h1>MENGENAL TPA AL-ISTIQOMAH</h1>
+                                    <p> Tempat Pendidikan Al Qur’an (TPA) istiqomah yang terletak di wilayah Dk. Pekaleran rt 002 Rw 002, Sridadi, Sirampog, Brebes, Jawa Tengan merupakan Pendidikan islam yang bertujuan menyediakan pusat Pendidikan yang islami
+                                        dan dengan konsep berlandaskan Al-Qur’an dan As Sunnah & sesuai dengan pemahaman orang-orang jaman dahulu. Semoga dengan adanya Pendidikan TPA ini dapat membawa kebaikan bagi agama, orang tua, keluarga, dan lingkungan,
+                                        dan kita termasuk orang-orang yang beruntung di Akhirat, Aamiin. TPA Al-Istiqomah memiliki beberapa visi dan misi, diantaranya:
+                                        <h2> VISI </h2>
+                                        <p>Terwujudnya generasi Rabbani, mencintai Al-Qur’an dan Berakhlakul Karimah. Tujuan TPA Al-Istiqomah adalah menyiapkan terbentuknya generasi Qur’ani, yaitu generasi yang memiliki komitmen terhadap al-Qur’an sebagai
+                                            sumber perilaku, pijakan hidup dan rujukan segala urusannya. Hal ini ditandai dengan kecintaan yang mendalam terhadap Al-Qur’an, mampu dan rajin membacanya, terus menerus mempelajari isi kandungannya, dan memiliki
+                                            kemauan yang kuat untuk mengamalkannya dalam kehidupan sehari-hari.
+                                        </p>
+                                        <h3> MISI</h3>
+                                        <p>• Mewujudkan generasi yang Rabbani </p>
+                                        <p>• Memupuk kecintaan para santri terhadap Al-Qur’an </p>
+                                        <p>• Membentuk generasi yang berakhlakul karimah </p>
+                                        <p>• Menyelenggarakan Pendidikan dan pengajaran islam yang sesuai dengan aqidah ahlussunah wal jama’ah</p>
+                                        <p>• Menumbuhkan kecintaan santri dalam menjaga Negara Kesatuan Republik Indonesia</p>
+
+                                        <h4>PROGRAM KEGIATAN TPA Al-Istiqomah</h4>
+                                        <p>Program Kegiatan Belajar mengajar (KBM) :</p>
+                                        <p>- dilaksanakan di masjid Al-Istiqomah </p>
+                                        <p>- Hari Senin-Jum’at, dimulai pada jam 15.00-17.00 PM </p>
+                                        <p>- dan untuk hari Minggu paginya digunakan untuk kegiatan bersih-bersih masjid Al-Istiqomah.
+                                            <h5>Program KBM tersebut meliputi :</h5>
+                                            <p>1. Tahfidz </p>
+                                            <p>2. Tahsin </p>
+                                            <p>3. Tasmi </p>
+                                            <p>4. Tilawah
+                                                <p>5. Dzikir pagi/petang </p>
+                                                <p>6. Kajian rutin </p>
+                                                <p>7. Kajian anak-anak </p>
+                                                <p>8. Camping liburan </p>
+
+                                            </p>
+
+                                </article>
+                                <article class="justify-text">
+                                    <h3>MENGENAL TPA AL-ISTIQOMAH </h3>
+                                    <p>
+                                        Tempat Pendidikan Al Qur’an (TPA) Al Istiqomah merupakan sarana pendidikan Islam dengan konsep yang berlandaskan Al-Qur’an dan Sunnah Nabi bagi para santri yang ada di Dukuh Pekaleran RT 002 RW 002 Kelurahan Sridadi, Kecamatan Sirampog, Kabupaten Brebes
+                                        Jawa Tengah. Jenjang pendidikan di TPA ini adalah dari mulai anak TK sampai dengan SMP. Adapun macam-macam kegiatan yang di sediakan di TPA Al Istiqomah di antaranya Kegiatan Tahfidz, Tahsin, Tilawah, Kajian rutin,
+                                        Kajian Anak-Anak, Tazmi’, Camping liburan, Dzikir Pagi/Sore. Dengan adanya pendidikan TPA ini, mampu memberikan manfaat bagi para santri agar lebih semangat belajar dalam menuntut ilmu agama. Seiring berjalanya
+                                        waktu TPA Al-Istiqomah semakin di percayai oleh masyarakat, banyak dari para orang tua yang mempercayakan anaknya untuk belajar Al-Qur’an di TPA Al-Istiqomah ini. Selain itu, dengan bertambahnya santri, TPA Al-Istiqomah
+                                        meningkatkan kualitas pengajarannya, yaitu dengan meningkatkan program kegiatan, serta manajemen pengelola TPA. Dimana TPA ini Alhamdulillah sudah memiliki struktur kelembagaan sehingga setiap kegiatan sudah tersetruktur
+                                        dengan baik. Jumlah murid sekarang alhamdulillah sudah mencapai lebih dari 50 santri. Alhamdulillah santri yang sudah lulus dari TPA ini rata-rata masuk ke dalam pondok pesantren. TPA ini sekarang memilii dua kelas
+                                        yaitu kelas Abu Bakar dan Kelas Umar. Untuk kelas Abu Bakar itu untuk anak TK sampai dengan kelas 3 SD, sedangkan kelas Umar untuk anak kelas 4 SD sampai dengan SMP. Setiap kelas memiliki wali kelas dan beberapa
+                                        anggota yang membantu wali kelas dalam mengajar. Hal ini di istilahkan dengan panitia (pendamping). Setiap kelas memiliki pendampng 2-3 orang. Sehingga memberikan kemudahan dan meringankan dalam setiap kegiatan.
+                                        Adapun program Kegiatan Belajar mengajar (KBM) dilaksanakan di masjid Al-Istiqomah dan dilaksanakan setiap hari Senin-Sabtu dan dimulai pada pukul 15.00-17.00 WIB. Untuk hari Minggu paginya TPA Al-Istiqomah mengadakan
+                                        kegiatan bersih-bersih masjid Al-Istiqomah dan lingkungan sekitar masjid. Selain dengan program kegiatan yang sudah ada, santri TPA Al-Istiqomah juga diajarkan doa-doa sehari-hari. Selain itu, kegiatan liburan sekolah
+                                        TPA sering mengadakan kegiatan seperti daurah libur, mukhayyam, dan camp.
+
+                                    </p>
+                                </article>
+                                <!-- Tambahkan artikel-artikel lainnya di sini -->
+                            </main>
+                            <footer>
+                                <p>Email : @tpamasjidalistiqomah002@gmail.com</p>
+                                <p>No.Hp : 081212183307</p>
+                                <p>&copy; 2023 TPA Masjid AL-Istiqomah</p>
+                            </footer>
+                        </body>
+
+</html>

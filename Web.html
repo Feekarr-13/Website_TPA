@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="image.png">
+    <title>TPA Masjid AL-Istiqomah</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TPA Masjid AL-Istiqomah menyediakan berbagai program pendidikan dan dakwah. Kunjungi website kami untuk informasi lebih lanjut.">
+    <link rel="stylesheet" href="Web.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Web.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- JS Bootstrap (dan dependensi jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- jQuery (wajib untuk Bootstrap) -->
+    <script src="path/to/jquery/jquery.min.js"></script>
+
+    <!-- Popper.js (wajib untuk Bootstrap) -->
+    <script src="path/to/popper/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Selain body, Anda juga dapat menentukan font untuk elemen lain, seperti h1 */
+        
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+
+    <body>
+        <div class="top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 top-left">
+                        <font style="vertical-align: inherit;">
+                            <font style 1="vertical-align: inherit;">Welcome to the TPA AL-Istiqomah Website</font>
+                        </font>
+                    </div>
+                    <div class="col-md-6 top-right">
+                        <div id="clock" style="text-align: right;">Rabu, 14 Juni 2023 03:26:06 PM</div>
+
+                        <script type="text/javascript">
+                            function showTime() {
+                                var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                                var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                                var date = new Date();
+                                var day = date.getDate();
+                                var month = date.getMonth();
+                                var thisDay = date.getDay(),
+                                    thisDay = myDays[thisDay];
+                                var yy = date.getYear();
+                                var year = (yy < 1000) ? yy + 1900 : yy;
+
+                                var a_p = "";
+                                var today = new Date();
+                                var curr_hour = today.getHours();
+                                var curr_minute = today.getMinutes();
+                                var curr_second = today.getSeconds();
+                                if (curr_hour < 12) {
+                                    a_p = "AM";
+                                } else {
+                                    a_p = "PM";
+                                }
+                                if (curr_hour == 0) {
+                                    curr_hour = 12;
+                                }
+                                if (curr_hour > 12) {
+                                    curr_hour = curr_hour - 12;
+                                }
+                                curr_hour = checkTime(curr_hour);
+                                curr_minute = checkTime(curr_minute);
+                                curr_second = checkTime(curr_second);
+                                document.getElementById('clock').innerHTML = thisDay + ', ' + day + ' ' + months[month] + ' ' + year + ' ' + curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+                            }
+
+                            function checkTime(i) {
+                                if (i < 10) {
+                                    i = "0" + i;
+                                }
+                                return i;
+                            }
+                            setInterval(showTime, 500);
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <header class="header-area">
+                <div class="top-header">
+                    <div class="container">
+                        <div class="header-content align-items-center justify-content-between">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="image.png" alt="Logo TPA Masjid AL-Istiqomah" alt="TPA AL-Istiqomah" align="left" width="80" style="margin:-5px 10px 0 0">
+                                    <b style="font-size:22px;margin-top:20px;font-weight:400;text-transform:uppercase;"><font
+                                                style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">TPA
+                                                    AL-Istiqomah</font></font></b><br>
+                                    <span style="font-size:16px;font-weight:400;"><font
+                                                style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">Dk.
+                                                    Pekaleran Rt 02 Rw 02,
+                                                    Sridadi, Sirampog, Brebes,
+                                                    Jawa Tengah
+                                                </font></font></span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 header-right">
+                                    <div class="login-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    /* Apply this CSS to add colored background to the text */
+                    
+                    h1 {
+                        text-align: center;
+                        background-color: rgb(235, 235, 235);
+                        padding: 10px;
+                    }
+                </style>
+
+                <body>
+                    <h1>السلام عليكم ورحمة الله وبركاته</h1>
+                </body>
+</head>
+
+<div id="sticky-wrapper" class="sticky-wrapper" style="height: 70px;">
+    <div class="academy-main-menu" style="width: 700px;">
+        <div class="classy-nav-container light left breakpoint-on">
+            <div class="container">
+                <nav class="classy-navbar justify-content-between" id="academyNav">
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="classy-menu">
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <div class="classynav">
+                            <ul>
+                                <li>
+                                    <a href="Beranda.html" title="Home page">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Beranda</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li class="cn-dropdown-item has-down pr12">
+                                    <a href="Profile.html" title="Profile">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Profile</font>
+                                        </font>
+                                    </a>
+                                    <span class="dd-trigger"></span><span class="dd-arrow"></span><span class="dd-trigger"></span><span class="dd-arrow"></span></li>
+                                <li>
+                                    <a href="Dakwah.html" title="Dakwah">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Dakwah</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Iklan.html" title="News">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">News</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Program.html" title="Program">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Program</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Fundraising.html" title="Fundation">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Fundraising</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Kontak.html" title="Contact">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Kontak</font>
+                                        </font>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="calling-info">
+                        <div class="call-center">
+                            <a href="tel:081212183307"><i
+                                                class="icon-telephone-2"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+</nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Gambar</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Tambahkan gaya CSS di sini (opsional) */
+        
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 5;
+            padding: 5;
+            background-color: #f0f0f0;
+        }
+        
+        .swiper-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+        /* Gaya untuk membuat teks rata tengah di bagian VISI dan MISI */
+        
+        #VISI,
+        #MISI {
+            text-align: center;
+            background-color: gray;
+            /* Warna latar belakang */
+            padding: 20px;
+            /* Ruang dalam kotak */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ... (your existing body content) ... -->
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="Profile.1.jpg" alt="Gambar 1"></div>
+            <div class="swiper-slide"><img src="Profile.2.jpg" alt="Gambar 2"></div>
+            <div class="swiper-slide"><img src="Image.3.jpg" alt="Gambar 3"></div>
+            <div class="swiper-slide"><img src="Image.4.jpg" alt="Gambar 4"></div>
+            <div class="swiper-slide"><img src="Image.5.jpg" alt="Gambar 5"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000, // Interval 3 detik
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <body>
+        <<section class="about-us-area section-padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="main">
+                            <div class="main">
+                                <div class="main_title"></div>
+                                <div class="main_body"> </div>
+                            </div>
+                        </div>
+                        <div id="main">
+                            <div class="main">
+                                <div class="main_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Principal's Speec</font>
+                                    </font>
+                                </div>
+                                <div class="main_body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img class="img-fluid" src="https://storage.googleapis.com/s.mysch.id/picture/93115447index.jpg" alt width="250" align="left" style="margin:5px 20px 20px 0px">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    TPA AL-ISTIQOMAH is a Quran Education park located in Dk. Pekaleran, Sridadi Village, Sirampog District, Brebes Regency. </font>
+                                                <font style="vertical-align: inherit;">TPA AL-ISTIQOMAH is an institution that plays a role in teaching the Quran to children from kindergarten to elementary school.
+                                                </font>
+                                                <font style="vertical-align: inherit;">The purpose of TPA AL-ISTIQOMAH is to create a generation of Muslims who are proficient and passionate about reading the Quran.
+                                                </font>
+                                            </font>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="main">
+                            <div class="main">
+                                <div class="main_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">News</font>
+                                    </font>
+                                </div>
+                                <div class="main_body">
+                                    <div class="academy-blog-posts">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                                                    <div class="blog-post-thumb mb-15"><img src="https://storage.googleapis.com/s.mysch.id/image-free/a1.jpg" alt style="width: 100%; margin: 0 auto;"></div>
+                                                    <div style="height:110px">
+                                                        <h4>
+                                                            <a href="#" class="post-title">
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">There is a secret behind reading habits
+                                                                    </font>
+                                                                </font>
+                                                            </a>
+                                                        </h4>
+                                                        <div class="post-meta">
+                                                            <p>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">January 10, 2021, Read 100 times
+                                                                    </font>
+                                                                </font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                                                    <div class="blog-post-thumb mb-15"><img src="https://storage.googleapis.com/s.mysch.id/image-free/a2.jpg" alt style="width: 100%; margin: 0 auto;"></div>
+                                                    <div style="height:110px">
+                                                        <h4>
+                                                            <a href="#" class="post-title">
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Found, 10 New Planets in the Milky Way Galaxy
+                                                                    </font>
+                                                                </font>
+                                                            </a>
+                                                        </h4>
+                                                        <div class="post-meta">
+                                                            <p>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">January 9, 2021, Read 150 times
+                                                                    </font>
+                                                                </font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                                                    <div class="blog-post-thumb mb-15"><img src="https://storage.googleapis.com/s.mysch.id/image-free/a3.jpg" alt style="width: 100%; margin: 0 auto;"></div>
+                                                    <div style="height:110px">
+                                                        <h4>
+                                                            <a href="#" class="post-title">
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Implementing Discipline in Schools
+                                                                    </font>
+                                                                </font>
+                                                            </a>
+                                                        </h4>
+                                                        <div class="post-meta">
+                                                            <p>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">January 8, 2021, Read 250 times
+                                                                    </font>
+                                                                </font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                                                    <div class="blog-post-thumb mb-15"><img src="https://storage.googleapis.com/s.mysch.id/image-free/a4.jpg" alt style="width: 100%; margin: 0 auto;"></div>
+                                                    <div style="height:110px">
+                                                        <h4>
+                                                            <a href="#" class="post-title">
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">The Importance of Regular Health Checks
+                                                                    </font>
+                                                                </font>
+                                                            </a>
+                                                        </h4>
+                                                        <div class="post-meta">
+                                                            <p>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">January 7, 2021, Read 300 times
+                                                                    </font>
+                                                                </font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="main">
+                            <div class="main">
+                                <div class="main_title"></div>
+                                <div class="main_body">
+                                    <div class="row gallery clearfix">
+                                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                                            <div style="margin-bottom:20px;">
+                                                <a href="Image.1.jpg" title="Photo 1" rel="prettyPhoto[gallery1]">
+                                                    <img src="Image.1.jpg" alt="Photo 1" width="100%">
+                                                    <p>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Gallery 1
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                                            <div style="margin-bottom:20px;">
+                                                <a href="Image.3.jpg" title="Photo 2" rel="prettyPhoto[gallery2]">
+                                                    <img src="Image.3.jpg" alt="Photo 2" width="100%">
+                                                    <p>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Gallery 2
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                                            <div style="margin-bottom:20px;">
+                                                <a href="Image.2.jpg" title="Photo 3" rel="prettyPhoto[gallery3]">
+                                                    <img src="Image.2.jpg" alt="Photo 3" width="100%">
+                                                    <p>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Gallery 3
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                                            <div style="margin-bottom:20px;">
+                                                <a href="Camp.5.jpg" title="Photo 4" rel="prettyPhoto[gallery4]">
+                                                    <img src="Camp.5.jpg" alt="Photo 4" width="100%">
+                                                    <p>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Gallery 5
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                                            <div style="margin-bottom:20px;">
+                                                <a href="Camp.3.jpg" title="Photo 5" rel="prettyPhoto[gallery5]">
+                                                    <img src="Camp.3.jpg" alt="Photo 5" width="100%">
+                                                    <p>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Gallery 5
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                                            <div style="margin-bottom:20px;">
+                                                <a href="Camp.4s.jpg" title="Photo 6" rel="prettyPhoto[gallery6]">
+                                                    <img src="Camp.4s.jpg" alt="Photo 6" width="100%">
+                                                    <p>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Gallery 6
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr> </div>
+                    <div class="col-md-4">
+                        <div id="widget">
+                            <div class="widget">
+                                <div class="widget_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Contact</font>
+                                    </font>
+                                </div>
+                                <div class="widget_body">
+
+                                    <b><font
+                                                    style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">Address
+                                                        :</font></font></b>
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">etc.
+                                            </font>
+                                            <font style="vertical-align: inherit;">Dk. pekaleran, Desa sridadi.
+                                            </font>
+                                            <font style="vertical-align: inherit;">Kecamatan Sirampog, Kabupaten Brebes.
+                                            </font>
+                                        </font>
+                                    </p>
+                                    <b><i class="fa fa-phone"></i><font
+                                                    style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">Telephone
+                                                        :</font></font></b>
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">081212183307</font>
+                                        </font>
+                                    </p> <b><i class="fa fa-envelope"></i><font
+                                                    style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">Email
+                                                        :</font></font></b>
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">tpamasjidalistiqomah002@gmail.com</font>
+                                        </font>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="widget">
+                            <div class="widget">
+                                <div class="widget_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Latest news
+                                        </font>
+                                    </font>
+                                </div>
+                                <div class="widget_body">
+                                    <div class="single-latest-blog-post d-flex" style="padding:10px 0px;border-bottom:1px dashed #DADADA;">
+                                        <div class="latest-blog-post-content">
+                                            <a href="#" class="post-title">
+                                                <h6>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">There is a secret behind reading habits
+                                                        </font>
+                                                    </font>
+                                                </h6>
+                                            </a>
+                                            <a class="post-date small">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">January 10, 2021</font>
+                                                </font>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="single-latest-blog-post d-flex" style="padding:10px 0px;border-bottom:1px dashed #DADADA;">
+                                        <div class="latest-blog-post-content">
+                                            <a href="#" class="post-title">
+                                                <h6>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Found, 10 New Planets in the Milky Way Galaxy</font>
+                                                    </font>
+                                                </h6>
+                                            </a>
+                                            <a class="post-date small">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">January 9, 2021</font>
+                                                </font>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="single-latest-blog-post d-flex" style="padding:10px 0px;border-bottom:1px dashed #DADADA;">
+                                        <div class="latest-blog-post-content">
+                                            <a href="#" class="post-title">
+                                                <h6>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Implementing Discipline in Schools</font>
+                                                    </font>
+                                                </h6>
+                                            </a>
+                                            <a class="post-date small">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">January 8, 2021</font>
+                                                </font>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="single-latest-blog-post d-flex" style="padding:10px 0px;border-bottom:1px dashed #DADADA;">
+                                        <div class="latest-blog-post-content">
+                                            <a href="#" class="post-title">
+                                                <h6>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">The Importance of Regular Health Checks
+                                                        </font>
+                                                    </font>
+                                                </h6>
+                                            </a>
+                                            <a class="post-date small">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">January 7, 2021</font>
+                                                </font>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="widget">
+                            <div class="widget">
+                                <div class="widget_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Banners</font>
+                                    </font>
+                                </div>
+                                <div class="widget_body">
+                                    <a href="https://www.desago.id" title="Desago" target="_blank">
+                                        <img width="100%" src="https://storage.googleapis.com/s.mysch.id/image-free/banner-desago.png" alt="Desago">
+                                    </a>
+                                    <br><br>
+                                    <a href="https://www.makinmahir.id" title="More Proficient" target="_blank">
+                                        <img width="100%" src="https://storage.googleapis.com/s.mysch.id/image-free/banner-makinmahir.jpg" alt="More Advanced">
+                                    </a>
+                                    <br><br>
+                                    <a href="https://www.bumitekno.com" title="Bumitekno" target="_blank">
+                                        <img width="100%" src="https://storage.googleapis.com/s.mysch.id/image-free/banner-bumitekno.png" alt="Bumitekno">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!-- ... (your existing content) ... -->
+
+            <nav>
+                <!-- ... menu navigasi ... -->
+            </nav>
+            </div>
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="styles.css">
+                <!-- Menghubungkan dengan file CSS terpisah -->
+                <title>Galeri Kegiatan</title>
+            </head>
+
+            <body>
+                <div class="gallery-section">
+
+                    <h2>Gallery Kegiatan</h2>
+                    <div class="gallery-container">
+                        <img src="Image.1.jpg" alt="Gallery Image 1">
+                        <img src="Image.3.jpg" alt="Gallery Image 2">
+                        <img src="slide 1.jpeg" alt="Gallery Image 1">
+                        <img src="Image.2.jpg" alt="Gallery Image 2">
+                        <img src="slide 2.jpeg" alt="Gallery Image 1">
+                        <img src="Image.4.jpg" alt="Gallery Image 2">
+                        <!-- Add more images as needed -->
+                    </div>
+                </div>
+                <div class="gallery-section">
+                    <h2>Camp Hiburan</h2>
+                    <div class="gallery-container">
+                        <img src="Camp.1.jpg" alt="Gallery Image 1">
+                        <img src="Camp.2.jpg" alt="Gallery Image 2">
+                        <img src="Camp.3.jpg" alt="Gallery Image 1">
+                        <img src="Camp.3.jpg" alt="Gallery Image 2">
+                        <img src="Camp.4.jpg" alt="Gallery Image 1">
+                        <img src="Camp.5.jpg" alt="Gallery Image 2">
+                        <img src="Camp.p1.jpg" alt="Gallery Image 1">
+                        <img src="Camp.p2.jpg" alt="Gallery Image 2">
+                        <img src="Camp.p3.jpg" alt="Gallery Image 1">
+                        <img src="Camp.p4.jpg" alt="Gallery Image 2">
+                        <img src="Camp.p5.jpg" alt="Gallery Image 1">
+                        <img src="Camp.1s.jpg" alt="Gallery Image 2">
+                        <img src="Camp.2s.jpg" alt="Gallery Image 2">
+                        <img src="Camp.s3.jpg" alt="Gallery Image 2">
+                        <img src="Camp.4s.jpg" alt="Gallery Image 2">
+                        <!-- Add more images as needed -->
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100076174757726" target="_blank" title="Facebook"><img src="Facebook.png" alt="Facebook"></a>
+                    <a href="https://Whatsaap.com/yourusername" target="_blank" title="Whatsaap"><img src="Whatsaap.jpeg" alt="Twitter"></a>
+                    <a href="https://instagram.com/tpamasjidalistiqomah" target="_blank" title="Instagram"><img src="instagram.png" alt="Instagram"></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+
+                <div class="copyright">
+                    <p>Email : @tpamasjidalistiqomah002@gmail.com</p>
+                    <p>No.Hp : 081212183307</p>
+                    <p>&copy; 2023 TPA Masjid AL-Istiqomah</p>
+                </div>
+                </div>
+            </body>
+            <style>
+                /* ... Existing styles ... */
+                /* Styling for Widgets */
+                
+                .widget {
+                    border: 1px solid #ccc;
+                    /* Add a border around the widget */
+                    background-color: rgb(235, 235, 235);
+                    /* Set the background color to grey */
+                    padding: 15px;
+                    margin-bottom: 20px;
+                    /* Add some space at the bottom */
+                    border-radius: 8px;
+                    /* Optional: Add rounded corners */
+                }
+                
+                .widget .widget_title {
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                
+                .widget .widget_body {
+                    margin-top: 10px;
+                }
+                
+                .widget p {
+                    margin-bottom: 5px;
+                }
+            </style>
+
+            <div class="col-md-4">
+                <div id="widget">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Contact</font>
+                            </font>
+                        </div>
+                        <div class="widget_body">
+
+                            <b><font
+                                            style="vertical-align: inherit;"><font
+                                                style="vertical-align: inherit;">Address
+                                                :</font></font></b>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">etc.
+                                    </font>
+                                    <font style="vertical-align: inherit;">Dk. pekaleran, Desa sridadi.
+                                    </font>
+                                    <font style="vertical-align: inherit;">Kecamatan Sirampog, Kabupaten Brebes.
+                                    </font>
+                                </font>
+                            </p>
+                            <b><i class="fa fa-phone"></i><font
+                                            style="vertical-align: inherit;"><font
+                                                style="vertical-align: inherit;">Telephone
+                                                :</font></font></b>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">081212183307</font>
+                                </font>
+                            </p> <b><i class="fa fa-envelope"></i><font
+                                            style="vertical-align: inherit;"><font
+                                                style="vertical-align: inherit;">Email
+                                                :</font></font></b>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">tpamasjidalistiqomah002@gmail.com</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="widget">
+                        <div class="widget">
+                            <div class="widget_title">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Latest news</font>
+                                </font>
+                            </div>
+                            <div class="widget_body">
+                                <div class="single-latest-blog-post d-flex" style="padding:10px 0px;border-bottom:1px dashed #DADADA;">
+                                    <div class="latest-blog-post-content">
+                                        <a href="#" class="post-title">
+                                            <h6>
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">There is a secret behind reading habits</font>
+                                                </font>
+                                            </h6>
+                                        </a>
+                                        <a class="post-date small">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">January 10, 2021</font>
+                                            </font>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="single-latest-blog-post d-flex" style="padding:10px 0px;border-bottom:1px dashed #DADADA;">
+                                    <div class="latest-blog-post-content">
+                                        <a href="#" class="post-title">
+                                            <h6>
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Found, 10 New Planets in the Milky Way Galaxy</font>
+                                                </font>
+                                            </h6>
+                                        </a>
+                                        <a class="post-date small">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">January 9, 2021</font>
+                                            </font>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="single-latest-blog-post d-flex" style="padding:10px 0px;border-bottom:1px dashed #DADADA;">
+                                    <div class="latest-blog-post-content">
+                                        <a href="#" class="post-title">
+                                            <h6>
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Implementing Discipline in Schools</font>
+                                                </font>
+                                            </h6>
+                                        </a>
+                                        <a class="post-date small">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">January 8, 2021</font>
+                                            </font>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="single-latest-blog-post d-flex" style="padding:10px 0px;border-bottom:1px dashed #DADADA;">
+                                    <div class="latest-blog-post-content">
+                                        <a href="#" class="post-title">
+                                            <h6>
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">The Importance of Regular Health Checks</font>
+                                                </font>
+                                            </h6>
+                                        </a>
+                                        <a class="post-date small">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">January 7, 2021</font>
+                                            </font>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="widget">
+                        <div class="widget">
+                            <div class="widget_title">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Banners</font>
+                                </font>
+                            </div>
+                            <div class="widget_body">
+                                <a href="https://www.desago.id" title="Desago" target="_blank">
+                                    <img width="100%" src="https://storage.googleapis.com/s.mysch.id/image-free/banner-desago.png" alt="Desago">
+                                </a>
+                                <br><br>
+                                <a href="https://www.makinmahir.id" title="More Proficient" target="_blank">
+                                    <img width="100%" src="https://storage.googleapis.com/s.mysch.id/image-free/banner-makinmahir.jpg" alt="More Advanced">
+                                </a>
+                                <br><br>
+                                <a href="https://www.bumitekno.com" title="Bumitekno" target="_blank">
+                                    <img width="100%" src="https://storage.googleapis.com/s.mysch.id/image-free/banner-bumitekno.png" alt="Bumitekno">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+</html>

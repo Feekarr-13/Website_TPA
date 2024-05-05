@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="website icon" type="png" href="image.png">
+    <title>TPA Masjid AL-Istiqomah - Program TPA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Program.css">
+</head>
+
+<body>
+    <div class="top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 top-left">
+                    <font style="vertical-align: inherit;">
+                        <font style 1="vertical-align: inherit;">Welcome to the TPA AL-Istiqomah Website</font>
+                    </font>
+                </div>
+                <div class="col-md-6 top-right">
+                    <div id="clock" style="text-align: right;">Rabu, 14 Juni 2023 03:26:06 PM</div>
+
+                    <script type="text/javascript">
+                        function showTime() {
+                            var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                            var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                            var date = new Date();
+                            var day = date.getDate();
+                            var month = date.getMonth();
+                            var thisDay = date.getDay(),
+                                thisDay = myDays[thisDay];
+                            var yy = date.getYear();
+                            var year = (yy < 1000) ? yy + 1900 : yy;
+
+                            var a_p = "";
+                            var today = new Date();
+                            var curr_hour = today.getHours();
+                            var curr_minute = today.getMinutes();
+                            var curr_second = today.getSeconds();
+                            if (curr_hour < 12) {
+                                a_p = "AM";
+                            } else {
+                                a_p = "PM";
+                            }
+                            if (curr_hour == 0) {
+                                curr_hour = 12;
+                            }
+                            if (curr_hour > 12) {
+                                curr_hour = curr_hour - 12;
+                            }
+                            curr_hour = checkTime(curr_hour);
+                            curr_minute = checkTime(curr_minute);
+                            curr_second = checkTime(curr_second);
+                            document.getElementById('clock').innerHTML = thisDay + ', ' + day + ' ' + months[month] + ' ' + year + ' ' + curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+                        }
+
+                        function checkTime(i) {
+                            if (i < 10) {
+                                i = "0" + i;
+                            }
+                            return i;
+                        }
+                        setInterval(showTime, 500);
+                    </script>
+                </div>
+            </div>
+            <link rel="website icon" type="png" href="image.png">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Program TPA</title>
+            <style>
+                /* Tambahkan gaya CSS di sini (opsional) */
+                
+                body {
+                    font-family: "Times New Roman", Times, serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f0f0f0;
+                }
+                
+                header {
+                    background-color: #333;
+                    color: #fff;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+                
+                header h1 {
+                    margin: 0;
+                }
+                
+                nav ul {
+                    list-style: none;
+                    padding: 0;
+                }
+                
+                nav li {
+                    display: inline;
+                    margin-right: 20px;
+                }
+                
+                nav a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+                
+                main {
+                    max-width: 800px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: #fff;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+                
+                footer {
+                    background-color: #333;
+                    color: #fff;
+                    text-align: center;
+                    padding: 10px 0;
+                }
+            </style>
+            </head>
+
+            <body>
+                <header>
+                    <h1>Program Unggulan TPA Masjid AL-Istiqomah</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="Beranda.html">Beranda</a></li>
+                            <li><a href="Profile.html">Profil TPA</a></li>
+                            <li><a href="index.html">Dakwah</a></li>
+                            <li><a href="Program.html">Program TPA</a></li>
+                            <li><a href="index.html">Fundraising</a></li>
+                            <li><a href="Kontak.html">Kontak</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <main>
+                    <main>
+                        <section id="program">
+                            <h2>Program</h2>
+                            <p>Di TPA Masjid AL-Istiqomah, kami menawarkan berbagai program untuk memenuhi kebutuhan pendidikan Al-Qur'an anak-anak:</p>
+                            <ul>
+                                <li>
+                                    <h3>Tahfidz</h3>
+                                    <p>Tahfidz merupakan program unggulan dari TPA Masjid Al Istiqomah. Program ini diselenggarakan oleh pembimbing TPA terhadap para santri agar mereka bisa menghafal Al-Qur’an secara baik dan benar, mampu mentashih hafalan
+                                        baik dari segi tajwid, membetulkan hafalan, dan memahami artinya serta memberikan pengarahan dan petunjuk lain yang diperlukan. Program ini dilaksanakan 1 jam sebelum kegiatan TPA dimulai.</p>
+                                </li>
+                                <li>
+                                    <h3>Kajian Rutin</h3>
+                                    <p>Program ini merupakan program mingguan dari TPA Masjid Al Istiqomah. Dimana program ini bertujuan untuk mengajak warga sekitar TPA untuk ikut dalam kegiatan TPA, baik mendengarkan ceramah, kegiatan tahsin, dan kegiatan
+                                        lainnya. Program ini biasanya dilakukan pada setiap hari jumat ba’da ashar dan bertempat di Masjid Al Istiqomah dukuh Pekaleran</p>
+                                </li>
+                                <li>
+                                    <h3>Tahsin</h3>
+                                    <p>Tahsin merupakan program yang dilakukan setiap 2 kali dalam seminggu. Kegiatan ini bertujuan untuk memperbaiki bacaan Al-Qur’an.</p>
+                                    <li>
+                                    </li>
+                                    <h3>Tilawah</h3>
+                                    <p>Tilawah merupakan program membaca Al-Qur’an dengan mamahami maknanya dengan mudah. </p>
+                                    <li>
+                                    </li>
+                                    <h3>Kajian</h3>
+                                    <p>Kegiatan kajian anak-anak merupakan kegiatan harian yang dilaksanakan di TPA Masjid Al Istiqomah. Kegiatan ini dilaksanakan setiap ba’da ashar. Adapun kegiatannya yaitu belajar membaca iqra, tuhfathul atfal, menghafal
+                                        doa harian, praktik wudhu dan shalat, ddan lain-lain.</p>
+                                    <li>
+                                    </li>
+                                    <h3>Tasmi'</h3>
+                                    <p>Tasmi’ merupakan kegiatan menyetorkan atau mendengarkan hafalan Al-Qur’an yang dilakukan oleh para santri kepada guru pembimbing tahfidz. Program ini biasa dilaksanakan setiap bulan ramadhan. Dimana para santri menyetorkan
+                                        hafalannya biasanya sebanyak 1 juz. Kegiatan ini biasa dilaksanakan setiap hari dan waktunya setelah ba’da ashar.</p>
+                                    <li>
+                                        <h3>Camping Hiburan</h3>
+                                        <p>Camping liburan merupakan salah satu program kegiatan TPA yang bertujuanan untuk mengisi waktu liburan para santri dengan berbagai kegiatan yang menyenangkan. Kegiatan ini biasa dilakukan setiap 1 bulan sekali.</p>
+                                    </li>
+                                    <li>
+                                        <h3>Dzikir pagi dan sore</h3>
+                                        <p>Program ini merupakan program harian, dimana kegiatan dilaksanak setiap hari setelah shalat shubuh dan shalat ashar.</p>
+                                    </li>
+                            </ul>
+                        </section>
+                    </main>
+                </main>
+
+                <footer>
+                    <p>Email : @tpamasjidalistiqomah002@gmail.com</p>
+                    <p>No.Hp : 081212183307</p>
+                    <p>&copy; 2023 TPA Masjid AL-Istiqomah</p>
+                </footer>
+            </body>
+
+</html>
